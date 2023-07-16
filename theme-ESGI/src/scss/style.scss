@@ -16,6 +16,20 @@ Text Domain: ESGI
 
 @import "vendor/normalize";
 @import "partials/functions";
+
+$margin-container: rem(150);
+$breakpoint: 700px;
+
+:root {
+  --margin-container: #{$margin-container};
+  --breakpoint: #{$breakpoint};
+
+  @media screen and (max-width: $breakpoint) {
+    $margin-container: rem(50);
+    --margin-container: #{$margin-container};
+  }
+}
+
 @import "partials/colors";
 @import "partials/fonts";
 @import "partials/globals";

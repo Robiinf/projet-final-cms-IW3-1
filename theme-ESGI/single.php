@@ -1,11 +1,11 @@
 <?php get_header(); ?>
 
     <main>
-        <h1 class="blog-title-margin"><?= the_title()?></h1>
+        <h1 class="wrapper-container"><?= the_title()?></h1>
         <div class="container">
-            <section class="sidebar-blog">
+            <aside class="sidebar-blog">
                 <?= get_sidebar('blog')?>
-            </section>
+            </aside>
 
             <section class="post">
                 <div class="post-content">

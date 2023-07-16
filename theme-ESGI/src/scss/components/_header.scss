@@ -2,7 +2,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: rem(50) rem(150);
+  padding: rem(50) var(--margin-container);
   img {
     cursor: pointer;
   }
@@ -15,7 +15,7 @@ header {
     & * {
       box-sizing: border-box;
     }
-    padding: 0 rem(150);
+    padding: 0 var(--margin-container);
     color: white;
     .head {
       padding-top: rem(50);
