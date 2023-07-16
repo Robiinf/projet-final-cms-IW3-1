@@ -819,7 +819,42 @@ h6 {
 }
 .container-search div {
   width: 80%;
-  background-color: red;
+  margin-bottom: 8.125rem;
+}
+
+.article-card {
+  display: flex;
+  flex-direction: column;
+  width: 25rem;
+  gap: 1.25rem;
+}
+.article-card a {
+  text-decoration: none;
+  color: var(--main-color);
+}
+.article-card p {
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: var(--text-color);
+  line-height: 2.375rem;
+}
+.article-card .info-post {
+  font-family: "Mulish", sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  letter-spacing: 0.0625rem;
+  color: var(--main-color);
+}
+.article-card .info-post a {
+  text-decoration: none;
+  color: var(--main-color);
+}
+
+.article-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.875rem;
 }
 
 /*# sourceMappingURL=style.css.map */
