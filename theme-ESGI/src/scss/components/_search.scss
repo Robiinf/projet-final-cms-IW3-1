@@ -41,3 +41,50 @@
   grid-template-columns: repeat(3, 1fr);
   gap: rem(30);
 }
+
+.container-search-form {
+  --search-color: var(--text-color);
+  padding-bottom: rem(3);
+  border-bottom: 1px solid var(--search-color);
+  form {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+  input {
+    font-family: $main-font;
+    flex: 1 1 auto;
+    width: 100%;
+    border: none;
+    font-size: rem(20);
+    padding: rem(10) 0;
+    outline: none;
+    color: var(--search-color) !important;
+  }
+
+  ::placeholder {
+    color: var(--search-color) !important;
+  }
+  button {
+    border: none;
+    background-color: transparent;
+    padding-right: rem(5);
+  }
+  .search-ico {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    &::after {
+      font: normal 18px/1 dashicons !important;
+      color: var(--search-color);
+      content: "\f179";
+    }
+
+    &:hover::after {
+      color: var(--primary-color);
+    }
+  }
+
+  /*  font: normal 20px/1 dashicons !important;
+  content: "\f179"; */
+}

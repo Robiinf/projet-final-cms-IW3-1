@@ -3,7 +3,6 @@
   width: 60%;
   form {
     margin-top: rem(50);
-    margin-left: rem(130);
     display: flex;
     gap: rem(20);
     flex-direction: column;
@@ -16,6 +15,7 @@
       background-color: transparent;
       border: none;
       cursor: pointer;
+      align-self: self-start;
     }
   }
 }

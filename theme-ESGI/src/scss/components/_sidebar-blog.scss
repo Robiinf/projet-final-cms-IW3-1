@@ -29,7 +29,20 @@
 
 .ul-sidebar {
   margin-left: 15px;
+  list-style: none;
   li {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      left: -15px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 5px;
+      height: 5px;
+      background: linear-gradient(90deg, #ffd0a8 0%, #ff4fc0 100%);
+      border-radius: 100px;
+    }
     margin-top: rem(21);
     @include p20;
     a {
@@ -61,6 +74,9 @@
     background-color: #f8f8f8;
     padding: rem(0) rem(20);
   }
+}
+.tags-container {
+  margin-bottom: rem(70);
 }
 
 .search {

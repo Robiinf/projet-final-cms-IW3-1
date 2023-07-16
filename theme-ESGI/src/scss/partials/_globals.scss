@@ -36,6 +36,23 @@ h6 {
   @include p26;
 }
 
+$margin-container: rem(150);
+.wrapper-container {
+  margin: 0 $margin-container;
+}
+
+section {
+  margin-bottom: rem(132);
+}
+
+h1 {
+  margin-bottom: rem(129) !important;
+}
+
+h2 + p {
+  margin-bottom: rem(16);
+}
+
 .flex-column {
   display: flex;
   flex-direction: column;
@@ -47,52 +64,55 @@ h6 {
   flex-direction: row;
 }
 
-.intro-section {
+.flex-end {
   display: flex;
-  flex-direction: column;
-  width: 85vw;
-  margin-bottom: rem(130);
-  .intro-thumbnail {
-    margin-top: rem(130);
-    align-self: flex-end;
-    width: 80%;
-    height: 100%;
+  justify-content: flex-end;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+
+.intro-section {
+  img {
+    height: rem(630);
+    margin-left: 20vw;
+    width: 80vw;
+    object-fit: cover;
   }
 }
 
 .about-us {
-  display: flex;
-  flex-direction: column;
-  width: 90vw;
-  .first {
-    width: 60vw;
-    align-self: center;
-    margin-bottom: rem(80);
+  & > div:first-child {
+    margin-left: 20%;
+    margin-bottom: rem(130);
   }
-  .second {
+
+  & > div:last-child {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    .about-us-img {
-      width: 40vw;
-      height: 100%;
+
+    & > div:first-child {
+      flex: 0 0 40%;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
     }
-    .about-us-content {
-      padding-left: rem(180);
+    & > div:last-child {
+      padding: rem(55) 10%;
+
       display: flex;
       flex-direction: column;
-      gap: rem(60);
-      h3 {
-        margin-bottom: rem(20);
-      }
+      justify-content: center;
+      gap: rem(55);
     }
   }
 }
 
 .our-services {
-  margin-top: rem(130);
   h2 {
-    margin-left: rem(150);
     margin-bottom: rem(64);
   }
 }
@@ -108,10 +128,8 @@ h6 {
 }
 
 .our-partners {
-  margin-top: rem(130);
   margin-bottom: rem(200);
   h2 {
-    margin-left: rem(150);
     margin-bottom: rem(64);
   }
 }
@@ -119,12 +137,141 @@ h6 {
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  gap: rem(120);
+  justify-content: space-between;
+
   img {
     width: rem(100);
   }
 }
+
+.team-list {
+  margin-bottom: rem(200);
+  margin-top: rem(63);
+  justify-content: space-between;
+  gap: rem(50);
+  img {
+    width: rem(250);
+  }
+}
+
+.service-img {
+  width: 100%;
+}
+
+.contacts {
+  margin-bottom: rem(145);
+  margin-top: rem(130);
+  justify-content: end;
+  margin-right: rem(150);
+  gap: rem(90);
+  text-align: end;
+  .flex-column {
+    gap: rem(25);
+  }
+}
+
+.service-content {
+  width: 70vw;
+  margin-bottom: rem(125);
+  p {
+    margin-top: rem(16);
+    margin-left: rem(150);
+  }
+}
+
+.service-img {
+  width: 100%;
+}
+
+.contacts {
+  margin-bottom: rem(145);
+  margin-top: rem(130);
+  justify-content: end;
+  margin-right: rem(150);
+  gap: rem(90);
+  text-align: end;
+  .flex-column {
+    gap: rem(25);
+  }
+}
+
+.contact-thumbnail {
+  width: 70%;
+}
+
+.blog-list {
+  margin-left: rem(50);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: rem(20);
+}
+
+.blog-title-margin {
+  margin-left: rem(150);
+  margin-bottom: rem(130);
+}
+
+.page404 {
+  .search {
+    width: 50vw;
+    .container-search-form {
+      --search-color: white !important;
+    }
+  }
+}
+/*
+
+
+.intro-section {
+  h1 {
+    margin-bottom: rem(0);
+  }
+  display: flex;
+  flex-direction: column;
+  
+  margin-bottom: rem(130);
+  .intro-thumbnail {
+    margin-top: rem(130);
+    align-self: flex-end;
+    width: 80vw;
+    height: rem(631);
+    object-fit: cover;
+  }
+}
+
+.about-us {
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  .first {
+    width: 60vw;
+    margin-bottom: rem(80);
+    margin-left: 20vw;
+  }
+  .second {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+
+    .about-us-img {
+      width: 40vw;
+      object-fit: cover;
+      height: 100%;
+    }
+    .about-us-content {
+      padding-left: rem(180);
+      display: flex;
+      flex-direction: column;
+      gap: rem(60);
+      h3 {
+        margin-bottom: rem(20);
+      }
+    }
+  }
+}
+
+
+
 
 .margin-left {
   margin-left: rem(150);
@@ -158,40 +305,7 @@ h6 {
   width: 100%;
 }
 
-.contacts {
-  margin-bottom: rem(145);
-  margin-top: rem(130);
-  justify-content: end;
-  margin-right: rem(150);
-  gap: rem(90);
-  text-align: end;
-  .flex-column {
-    gap: rem(25);
-  }
-}
 
-.contact-thumbnail {
-  width: 70%;
-}
 
-.flex-end {
-  display: flex;
-  justify-content: flex-end;
-}
 
-.container {
-  display: grid;
-  grid-template-columns: 40% 60%;
-}
-
-.blog-list {
-  margin-left: rem(20);
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: rem(20);
-}
-
-.blog-title-margin {
-  margin-left: rem(150);
-  margin-bottom: rem(130);
-}
+*/

@@ -1,5 +1,7 @@
 <?php
 
+include 'inc/search.php';
+
 // SETUP THEME
 add_action( 'after_setup_theme', 'setup_theme', 0);
 function setup_theme(){
@@ -24,7 +26,7 @@ function theme_register_sidebar(){
 		'id' => 'blog_sidebar',
 		'description' => 'Sidebar pour la page blog',
 		'before_widget' => '<div>',
-		'after_widget' => '</div>',
+		'after_widget' => '</div> g',
 	) );
 }
 
@@ -1046,12 +1048,3 @@ add_filter( 'wp_check_filetype_and_ext', function($data, $file, $filename, $mime
 		  </style>';
   }
   add_action( 'admin_head', 'wppln_fix_svg' );
-
-?>
-
-
-
-
-
-
-

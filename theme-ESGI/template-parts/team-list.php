@@ -1,4 +1,6 @@
-<h2 class="margin-title" ><?= get_theme_mod('team_section_title', 'Our Team') ?></h2>
+<div class="wrapper-container">
+  
+<h2  ><?= get_theme_mod('team_section_title', 'Our Team') ?></h2>
 <section class="flex-row team-list">
     <div class="flex-column">
         <img src="<?= get_theme_mod("team_member1_img", get_template_directory_uri() . '/assets/images/png/5.png')?>" alt="">
@@ -25,4 +27,5 @@
         <p class="p20"><?= get_theme_mod('team_member4_mail', 'ceo@company.com') ?></p>
     </div>
     
-</section>
+</section>  
+</div>

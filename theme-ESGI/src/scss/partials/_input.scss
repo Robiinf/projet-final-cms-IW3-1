@@ -1,7 +1,16 @@
 .theme-input {
   border: none;
-  border-bottom: 1px solid var(--text-color);
+  border-bottom: 1px solid #e4e4e4;
   background-color: transparent;
   padding: rem(10);
   @include p20;
+
+  ::placeholder {
+    color: #e4e4e4;
+  }
+}
+
+.form-row {
+  display: flex;
+  gap: rem(50);
 }

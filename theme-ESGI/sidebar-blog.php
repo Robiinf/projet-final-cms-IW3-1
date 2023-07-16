@@ -2,7 +2,7 @@
 
     <div class="search">
         <h6>Search</h6>
-        <?php get_search_form(); ?>
+        <? get_template_part('template-parts/search-form'); ?>
     </div>
     <div>
         <h6>Recent Posts</h6>
@@ -31,7 +31,7 @@
             <?php wp_list_categories(['title_li' => '']); ?>
         </ul>
     </div>
-    <div>
+    <div class="tags-container">
         <h6>Tags</h6>
         <?php $tag = wp_tag_cloud( 'format=array' ); ?>
         <div class="tags">
