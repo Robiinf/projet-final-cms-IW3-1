@@ -1,0 +1,55 @@
+#site-footer {
+  background-color: var(--main-color);
+  color: var(--bg-color);
+  display: flex;
+  flex-direction: column;
+  .footer-first {
+    margin-top: rem(75);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    h6 {
+      color: var(--bg-color);
+    }
+    p {
+      color: var(--bg-color);
+    }
+    .info-footer {
+      display: flex;
+      flex-direction: row;
+      gap: rem(50);
+      margin-right: rem(150);
+      text-align: end;
+      div {
+        display: flex;
+        flex-direction: column;
+        gap: rem(20);
+      }
+    }
+    .logo-footer {
+      margin-left: rem(150);
+      width: rem(200);
+      height: 100%;
+    }
+  }
+  .footer-second {
+    margin-top: rem(70);
+    margin-bottom: rem(50);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    p {
+      margin-left: rem(150);
+      color: var(--bg-color);
+    }
+    .social {
+      display: flex;
+      flex-direction: row;
+      gap: rem(50);
+      margin-right: rem(150);
+      align-items: center;
+    }
+  }
+}

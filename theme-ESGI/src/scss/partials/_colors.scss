@@ -1,0 +1,10 @@
+$white: #fff;
+$blue: #050a3a;
+$grey: #8a8a8a;
+$dark-grey: #979797;
+:root {
+  --bg-color: #{$white};
+  --text-color: #{$grey};
+  --main-color: #{$blue};
+  --dark-color: #{$dark-grey};
+}

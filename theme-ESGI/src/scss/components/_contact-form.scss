@@ -1,0 +1,21 @@
+.write-us {
+  margin-bottom: rem(145);
+  width: 60%;
+  form {
+    margin-top: rem(50);
+    margin-left: rem(130);
+    display: flex;
+    gap: rem(20);
+    flex-direction: column;
+    button {
+      font-family: $main-font;
+      font-weight: 700;
+      font-size: rem(20);
+      color: var(--main-color);
+      margin-top: rem(40);
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+    }
+  }
+}

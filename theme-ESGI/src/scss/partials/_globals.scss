@@ -1,0 +1,197 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  @include heading1;
+}
+
+h2 {
+  @include heading2;
+}
+
+h3 {
+  @include heading3;
+}
+
+h4 {
+  @include heading4;
+}
+
+h5 {
+  @include heading5;
+}
+
+h6 {
+  @include heading6;
+}
+
+.p20 {
+  @include p20;
+}
+
+.p26 {
+  @include p26;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  gap: rem(30);
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.intro-section {
+  display: flex;
+  flex-direction: column;
+  width: 85vw;
+  margin-bottom: rem(130);
+  .intro-thumbnail {
+    margin-top: rem(130);
+    align-self: flex-end;
+    width: 80%;
+    height: 100%;
+  }
+}
+
+.about-us {
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  .first {
+    width: 60vw;
+    align-self: center;
+    margin-bottom: rem(80);
+  }
+  .second {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .about-us-img {
+      width: 40vw;
+      height: 100%;
+    }
+    .about-us-content {
+      padding-left: rem(180);
+      display: flex;
+      flex-direction: column;
+      gap: rem(60);
+      h3 {
+        margin-bottom: rem(20);
+      }
+    }
+  }
+}
+
+.our-services {
+  margin-top: rem(130);
+  h2 {
+    margin-left: rem(150);
+    margin-bottom: rem(64);
+  }
+}
+.services-list {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  img {
+    width: 20vw;
+    height: 100%;
+    flex-grow: 1;
+  }
+}
+
+.our-partners {
+  margin-top: rem(130);
+  margin-bottom: rem(200);
+  h2 {
+    margin-left: rem(150);
+    margin-bottom: rem(64);
+  }
+}
+.partners-list {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: rem(120);
+  img {
+    width: rem(100);
+  }
+}
+
+.margin-left {
+  margin-left: rem(150);
+}
+
+.margin-title {
+  margin-left: rem(150);
+  margin-top: rem(130);
+}
+
+.team-list {
+  margin-bottom: rem(200);
+  margin-top: rem(63);
+  justify-content: center;
+  gap: rem(50);
+  img {
+    width: rem(250);
+  }
+}
+
+.service-content {
+  width: 70vw;
+  margin-bottom: rem(125);
+  p {
+    margin-top: rem(16);
+    margin-left: rem(150);
+  }
+}
+
+.service-img {
+  width: 100%;
+}
+
+.contacts {
+  margin-bottom: rem(145);
+  margin-top: rem(130);
+  justify-content: end;
+  margin-right: rem(150);
+  gap: rem(90);
+  text-align: end;
+  .flex-column {
+    gap: rem(25);
+  }
+}
+
+.contact-thumbnail {
+  width: 70%;
+}
+
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+
+.blog-list {
+  margin-left: rem(20);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: rem(20);
+}
+
+.blog-title-margin {
+  margin-left: rem(150);
+  margin-bottom: rem(130);
+}

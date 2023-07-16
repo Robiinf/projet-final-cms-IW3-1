@@ -1,0 +1,7 @@
+.theme-input {
+  border: none;
+  border-bottom: 1px solid var(--text-color);
+  background-color: transparent;
+  padding: rem(10);
+  @include p20;
+}

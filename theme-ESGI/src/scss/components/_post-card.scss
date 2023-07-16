@@ -1,0 +1,21 @@
+.post-card {
+  display: flex;
+  flex-direction: column;
+  gap: rem(20);
+  width: rem(400);
+  a {
+    text-decoration: none;
+    color: var(--main-color);
+  }
+  p {
+    font-family: $main-font;
+    font-weight: 400;
+    font-size: rem(20);
+    color: var(--text-color);
+  }
+  .post-list-thumbnail {
+    width: 100%;
+    height: rem(200);
+    object-fit: cover;
+  }
+}

@@ -1,0 +1,45 @@
+.post {
+  display: flex;
+  margin-left: rem(50);
+  flex-direction: column;
+  gap: rem(140);
+  .post-content {
+    width: 85%;
+    p {
+      @include p20;
+    }
+    .info-post {
+      margin-top: rem(50);
+      margin-bottom: rem(50);
+      font-family: $main-font;
+      font-weight: 700;
+      font-size: rem(20);
+      letter-spacing: rem(1);
+      color: var(--main-color);
+      a {
+        text-decoration: none;
+        color: var(--main-color);
+      }
+    }
+  }
+}
+.post-thumbnail {
+  width: 100%;
+  height: rem(400);
+  object-fit: cover;
+}
+
+.post-tags {
+  display: flex;
+  margin-top: rem(40);
+  flex-wrap: wrap;
+  gap: rem(10);
+  @include p20;
+  a {
+    text-decoration: none;
+    font-size: rem(13);
+    color: var(--text-color);
+    background-color: #f8f8f8;
+    padding: rem(0) rem(20);
+  }
+}
