@@ -55,11 +55,14 @@
     font-family: $main-font;
     flex: 1 1 auto;
     width: 100%;
-    border: none;
+    border: none !important;
     font-size: rem(20);
     padding: rem(10) 0;
     outline: none;
     color: var(--search-color) !important;
+    &:focus {
+      border: none !important;
+    }
   }
 
   ::placeholder {

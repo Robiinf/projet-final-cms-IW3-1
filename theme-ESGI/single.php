@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
-    <main>
-        <h1 class="wrapper-container"><?= the_title()?></h1>
+    <main class="wrapper-container">
+        <h1 ><?= the_title()?></h1>
         <div class="container">
             <aside class="sidebar-blog">
                 <?= get_sidebar('blog')?>
@@ -17,12 +17,12 @@
                     <?= the_tags("<div class='post-tags'>", " ", "</div>") ?>
                 </div>
                 <div>
-                    <h2>Commentaires</h2>
-                    <div>
+                   
+                 
                         <?php if (comments_open() || get_comments_number()) : ?>
                             <?php comments_template(); ?>
                         <?php endif; ?>
-                    </div>
+                    
                 </div>
             </section>
         </div>

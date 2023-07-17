@@ -1,6 +1,8 @@
 <?php
-
+//include comments.php
+/* include 'comments.php'; */
 include 'inc/search.php';
+include 'inc/commentForm.php';
 
 // SETUP THEME
 add_action( 'after_setup_theme', 'setup_theme', 0);
