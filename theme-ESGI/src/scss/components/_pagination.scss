@@ -1,0 +1,27 @@
+.nav-pagination {
+  display: flex;
+  gap: rem(25);
+  margin: rem(70) 0;
+  .prev,
+  .next {
+    display: none;
+  }
+
+  a,
+  span {
+    width: rem(40);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: rem(40);
+    text-decoration: none;
+
+    text-align: center;
+    color: var(--main-color) !important;
+    @include p20; //background: var(--main-color);
+  }
+  span {
+    color: white !important;
+    background: var(--main-color);
+  }
+}

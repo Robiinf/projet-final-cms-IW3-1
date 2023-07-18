@@ -34,29 +34,6 @@ function theme_register_sidebar(){
 
 // PAGINATION TODO : ajouter style pagination
 
-function theme_pagination()
-{
-    $pages = paginate_links(['type' => 'array']);
-    if ($pages === null) {
-        return;
-    }
-    echo '<nav';
-    echo '<ul>';
-    foreach ($pages as $page) {
-        /* $active = strpos($page, 'current') !== false;
-        $class = '';
-        if ($active) {
-            $class .= '';
-        } */
-        echo '<li>';
-		echo $page;
-        //echo str_replace('page-numbers', 'page-link', $page);
-        echo '</li>';
-    }
-    echo '</ul>';
-    echo '</nav>';
-}
-
 
 // THEME CUSTOMIZER
 add_action( 'customize_register', 'theme_customize_register' );

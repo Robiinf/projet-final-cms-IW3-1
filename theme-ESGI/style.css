@@ -608,7 +608,6 @@ h2 + p {
 }
 
 .blog-list {
-  margin-left: 2.5rem;
   display: grid;
   /* adaptive grid el width = 300px */
   grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
@@ -806,6 +805,36 @@ h2 + p {
     flex-direction: column;
     gap: 2.5rem;
   }
+}
+
+.nav-pagination {
+  display: flex;
+  gap: 1.25rem;
+  margin: 3.5rem 0;
+}
+.nav-pagination .prev,
+.nav-pagination .next {
+  display: none;
+}
+.nav-pagination a,
+.nav-pagination span {
+  width: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2rem;
+  text-decoration: none;
+  text-align: center;
+  color: var(--main-color) !important;
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--text-color);
+  line-height: 1.9rem;
+}
+.nav-pagination span {
+  color: white !important;
+  background: var(--main-color);
 }
 
 header {

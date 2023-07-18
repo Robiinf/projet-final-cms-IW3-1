@@ -1,3 +1,4 @@
+<div>
 <section class="blog-list">
     <?php if (have_posts()) : ?>
         <?php while (have_posts()) : the_post(); ?>
@@ -11,8 +12,10 @@
         <p class="p20"><?= get_theme_mod('text_case_no_result', "No result.")?></p>
     <?php endif; ?>
 
-    <div>
-       <?php theme_pagination() ?> 
-    </div>
 </section>
+<nav class="nav-pagination">
+   <?= paginate_links() ?> 
+</nav>
 
+
+</div>

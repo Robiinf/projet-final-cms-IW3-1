@@ -235,7 +235,6 @@ h2 + p {
 }
 
 .blog-list {
-  margin-left: rem(50);
   display: grid;
   /* adaptive grid el width = 300px */
   grid-template-columns: repeat(auto-fill, minmax(rem(320), 1fr));
