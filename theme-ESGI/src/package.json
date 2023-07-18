@@ -1,8 +1,5 @@
 {
   "scripts": {
     "watch": "sass --no-charset --watch scss/style.scss ../style.css"
-  },
-  "dependencies": {
-    "sass": "^1.63.6"
   }
 }
