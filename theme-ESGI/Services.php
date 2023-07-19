@@ -11,6 +11,8 @@
         <h2 class="wrapper-container"><?= get_theme_mod("service1_title", 'Corp. Parties')?></h2>
         <p class="p26"><?= get_theme_mod("service1_content", 'Specializing in the creation of exceptional events for private and corporate clients, we design, plan and manage every project from conception to execution.')?></p>
     </section>
+    <?php if(has_post_thumbnail()): ?>
     <img class="service-img" src="<?= the_post_thumbnail_url() ?>" alt="">
+    <?php endif; ?>
 
 <?php get_footer() ?>

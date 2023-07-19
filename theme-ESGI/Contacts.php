@@ -10,9 +10,11 @@
     <section>
         
         <?php get_template_part('template-parts/contacts-info-page') ?>
+        <?php if(has_post_thumbnail()): ?>
         <div class="flex-end">
             <img class="contact-thumbnail" src="<?= the_post_thumbnail_url() ?>" alt="">
         </div>
+        <?php endif; ?>
     </section>
 
     <div class="wrapper-container">

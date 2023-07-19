@@ -4,9 +4,11 @@
 
     <section class="intro-section">
         <h1 class="wrapper-container"><?= get_theme_mod("main_title", "A really professional structure for all your events!")?></h1>
+        <?php if(has_post_thumbnail()): ?>
         <div class="flex-end">
             <img class="intro-thumbnail" src="<?= the_post_thumbnail_url() ?>" alt="">
         </div>
+        <?php endif; ?>
     </section>
 
     <section class="about-us">
