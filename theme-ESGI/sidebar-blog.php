@@ -35,11 +35,15 @@
         <h6>Tags</h6>
         <?php $tag = wp_tag_cloud( 'format=array' ); ?>
         <div class="tags">
+            <?php if(empty($tag)): ?>
+                <p class="p20">No tags</p>
+            <?php else: ?>
             <?php foreach($tag as $t): ?>
                 <div class="tag">
                     <p class="p20"><?= $t ?></p>
                 </div>
             <?php endforeach; ?>
+            <?php endif; ?>
         </div>
         
     </div>
