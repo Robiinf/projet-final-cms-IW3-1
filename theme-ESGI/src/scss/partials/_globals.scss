@@ -67,6 +67,7 @@ h2 + p {
   flex-direction: row;
   @media screen and (max-width: $breakpoint) {
     flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -222,6 +223,7 @@ h2 + p {
   margin-bottom: rem(145);
   margin-top: rem(130);
   justify-content: end;
+  align-items: end;
   margin-right: rem(150);
   gap: rem(90);
   text-align: end;
