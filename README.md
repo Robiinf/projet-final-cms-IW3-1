@@ -18,6 +18,6 @@
 
 # Paramètre et modification du thème
 
-Une fois vos pages crées vous pouvez modifier le thème via ses paramètre : Personnaliser -> Réglages theme. Vous pourrez modifier les textes et images des templates du thème dans les différents panel correspondants. 
+Une fois vos pages crées vous pouvez modifier le thème via ses paramètre : Personnaliser -> Réglages theme. Vous pourrez modifier les textes et images des templates du thème dans les différents panels correspondants. 
 
 
