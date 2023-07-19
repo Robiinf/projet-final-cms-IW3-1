@@ -2,7 +2,7 @@
 
     <div class="search">
         <h6>Search</h6>
-        <? get_template_part('template-parts/search-form'); ?>
+        <?= get_template_part('template-parts/search-form'); ?>
     </div>
     <div>
         <h6>Recent Posts</h6>
