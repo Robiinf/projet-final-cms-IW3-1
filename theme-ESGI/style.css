@@ -552,6 +552,9 @@ h2 + p {
 .partners-list img {
   width: 5rem;
 }
+.partners-list img:hover {
+  transform: scale(1.1);
+}
 
 .team-list {
   margin-bottom: 10rem;
@@ -1280,7 +1283,7 @@ header .burger-menu-content b {
 
 .article-list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
   gap: 1.5rem;
 }
 
