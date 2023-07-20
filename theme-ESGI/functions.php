@@ -118,6 +118,14 @@ function theme_customize_register($wp_customize){
 
 	// Ajout des reglages
 
+	// COLORS
+	$wp_customize->add_setting('main_color', array(
+		'type' => 'theme_mod',
+		'transport' => 'refresh',
+		'default' => '#050a3a',
+  		'sanitize_callback' => 'sanitize_hex_color',
+	));
+
 	// FOOTER
 	$wp_customize->add_setting( 'footer_logo', array(
 		'type' => 'theme_mod',
@@ -590,6 +598,14 @@ function theme_customize_register($wp_customize){
 
 	// Ajout des controles
 
+	// COLORS
+
+	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 
+		'main_color', array(
+	  	'label' => __( 'Couleur principale du thème.'),
+	  	'section' => 'section_home_custom',
+	) ) );
+
 	// FOOTER
 	
 	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'footer_logo', array(
@@ -991,6 +1007,16 @@ function theme_customize_register($wp_customize){
 		'label' => __( 'Sous-titre 404' ),
 	));
 	
+}
+
+add_action( 'wp_head', 'esgi_css_output');
+function esgi_css_output(){
+	$main_color = get_theme_mod('main_color', '#050a3a');
+	echo '<style>
+			 :root{
+			 	--main-color: ' . $main_color . ' 
+			  }
+		</style>';
 }
 
 // Allow SVG
